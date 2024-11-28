@@ -1,0 +1,54 @@
+/* עיצוב כללי לעמוד */
+body {
+    font-family: Arial, sans-serif; /* סוג פונט */
+    text-align: center; /* מיקום טקסט */
+    margin: 20px; /* שוליים מסביב לעמוד */
+    background-color: #f4f4f4; /* צבע רקע */
+}
+
+/* עיצוב לכותרת הראשית */
+h1 {
+    color: #333; /* צבע טקסט */
+    font-size: 2.5rem; /* גודל טקסט */
+}
+
+/* עיצוב לפסקאות */
+p {
+    color: #555; /* צבע טקסט */
+    font-size: 1.2rem; /* גודל טקסט */
+}
+
+/* עיצוב לתמונות */
+img {
+    border-radius: 10px; /* עיגול פינות התמונה */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* הצללה */
+    max-width: 100%; /* התאמה לגודל המסך */
+    height: auto;
+}
+
+/* עיצוב לקישורים */
+a {
+    color: blue; /* צבע טקסט */
+    text-decoration: none; /* ביטול קו תחתון */
+}
+
+a:hover {
+    text-decoration: underline; /* הוספת קו תחתון בריחוף */
+}
+
+/* עיצוב לתפריט ניווט */
+nav {
+    background-color: #333; /* צבע רקע */
+    padding: 10px; /* ריווח פנימי */
+}
+
+nav a {
+    color: white; /* צבע טקסט */
+    text-decoration: none; /* ביטול קו תחתון */
+    margin: 0 15px; /* ריווח בין הקישורים */
+    font-weight: bold; /* הדגשת טקסט */
+}
+
+nav a:hover {
+    color: #ff6600; /* שינוי צבע בריחוף */
+}
