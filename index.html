@@ -3,32 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <!-- קישור לקובץ ה-CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Modern Website</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(90deg, #4e54c8, #8f94fb);
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 1rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .features h2 {
+            margin-bottom: 1rem;
+        }
+
+        .features .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .features .feature {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features .feature h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #4e54c8;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <!-- כותרת ראשית -->
-    <h1>Welcome to My Website!</h1>
-    <!-- פסקה -->
-    <p>This is a simple HTML website with CSS styling.</p>
+    <header>
+        <h1>Modern Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- תמונה -->
-    <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+    <section class="hero" id="home">
+        <h2>Welcome to Our Modern Website</h2>
+    </section>
 
-    <!-- קישורים -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Responsive Design</h3>
+                <p>Our website looks great on any device, from mobile to desktop.</p>
+            </div>
+            <div class="feature">
+                <h3>Modern Layout</h3>
+                <p>We use the latest design trends to make our site visually appealing.</p>
+            </div>
+            <div class="feature">
+                <h3>User Friendly</h3>
+                <p>Easy navigation and intuitive design for the best user experience.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- טופס יצירת קשר -->
-    <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <footer>
+        <p>&copy; 2024 Modern Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
